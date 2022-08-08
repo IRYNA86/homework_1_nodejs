@@ -1,0 +1,23 @@
+{
+  "name": "homework_1_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IRYNA86/homework_1_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IRYNA86/homework_1_nodejs/issues"
+  },
+  "homepage": "https://github.com/IRYNA86/homework_1_nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
