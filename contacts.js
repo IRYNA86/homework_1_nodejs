@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
-console.log(__dirname);
+
 const contactsPath = path.resolve("db/contacts.json");
 
 const listContacts = async () => {
@@ -9,4 +9,11 @@ const listContacts = async () => {
   return contacts;
 };
 
-module.exports = { listContacts };
+const getContactById = async (id) => {
+const contacts = await listContacts();
+const result = contacts.find(item => item.id === id);
+if(!result){return null};
+return result;
+}
+
+module.exports = { listContacts, getContactById };
